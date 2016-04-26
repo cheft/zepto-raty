@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Zepto Raty</title>
+
+    <script src="lib/zepto.js"></script>
+    <script src="raty/zepto.raty.js"></script>
+</head>
+<body>
+<div id="large"></div>
+
+<div id="largeNoSpace"></div>
+
+<div id="normal"></div>
+
+<div id="normalNoSpace"></div>
+
+<div id="small"></div>
+
+<div id="smallNoSpace"></div>
+
+<script>
+    var scoreOut;
+
+    $('#large').raty({
+        number: 5, size: 'large', path: 'raty/images', score: 3, click: function (score) {
+            scoreOut = score;
+            console.log(scoreOut)
+        }
+    });
+
+    $('#largeNoSpace').raty({
+        number: 5, size: 'large', path: 'raty/images', score: 4, space: false, click: function (score) {
+            scoreOut = score;
+            console.log(scoreOut)
+        }
+    });
+
+    $('#normal').raty({
+        number: 5, size: 'normal', path: 'raty/images', score: 3, click: function (score) {
+            scoreOut = score;
+            console.log(scoreOut)
+        }
+    });
+
+    $('#normalNoSpace').raty({
+        number: 5, size: 'normal', path: 'raty/images', score: 4, space: false, click: function (score) {
+            scoreOut = score;
+            console.log(scoreOut)
+        }
+    });
+
+    $('#small').raty({
+        number: 5, size: 'small', path: 'raty/images', score: 2, click: function (score) {
+            scoreOut = score;
+            console.log(scoreOut)
+        }
+    });
+
+    $('#smallNoSpace').raty({
+        number: 5, size: 'small', path: 'raty/images', score: 2, space: false, click: function (score) {
+            scoreOut = score;
+            console.log(scoreOut)
+        }
+    });
+</script>
+</body>
+</html>
