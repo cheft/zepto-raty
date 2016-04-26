@@ -1,5 +1,5 @@
 # zepto-raty
-基于Zepto的移动端评分插件，在手机微信、UC等浏览器上测试通过。
+基于Zepto的移动端评分插件，在手机微信、UC等浏览器上测试通过。寻找不到相应的手机端评分插件，因此参照jQuery的评分插件自己实现了这个手机端评分插件。
 
  ![zepto-raty](https://github.com/chenruchang/zepto-raty/blob/master/image/demo.png)
 
